@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  surname: MyString
+  gotra: MyString
+  kuldevi_matha: MyString
+  location: MyText
+
+two:
+  surname: MyString
+  gotra: MyString
+  kuldevi_matha: MyString
+  location: MyText

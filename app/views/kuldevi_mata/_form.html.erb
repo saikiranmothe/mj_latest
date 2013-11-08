@@ -1,0 +1,19 @@
+<%= simple_form_for(@kuldevi_matum) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :address1 %>
+    <%= f.input :street %>
+    <%= f.input :city %>
+    <%= f.input :state %>
+    <%= f.input :country %>
+    <%= f.input :how_to_reach %>
+    <%= f.input :contact_details %>
+    <%= f.input :website %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

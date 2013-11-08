@@ -1,0 +1,23 @@
+ <div class="container">
+     <div class="row">
+           <% @videos.each do |video| %>
+              <div class="span4">
+              
+            <!--  <%=link_to video.id, video_path(video) %>   -->
+                <h2 style="text-align:center">
+                  <%= link_to video.title,video_path(video) %> 
+                </h2>
+                
+               <iframe  src="http://<%= video.youtube %>" frameborder="0" allowfullscreen></iframe>
+    
+               <h6><%= video.content %> </h6>
+               <hr>
+              <!-- Watch Video Button -->
+               </div>
+         <% end %>
+          <hr>
+      </div>
+</div>
+<hr>
+
+      

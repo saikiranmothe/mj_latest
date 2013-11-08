@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Surname:</b>
+  <%= @gotra.surname %>
+</p>
+
+<p>
+  <b>Gotra:</b>
+  <%= @gotra.gotra %>
+</p>
+
+<p>
+  <b>Kuldevi matha:</b>
+  <%= @gotra.kuldevi_matha %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @gotra.location %>
+</p>
+
+
+<%= link_to 'Edit', edit_gotra_path(@gotra) %> |
+<%= link_to 'Back', gotras_path %>

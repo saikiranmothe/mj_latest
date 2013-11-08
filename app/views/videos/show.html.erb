@@ -1,0 +1,16 @@
+<%- model_class = Video -%>
+
+
+ <div class="container">
+     <div class="row">
+                 <h1><%= @video.title %></h1>
+                 <hr>
+                        
+               <iframe  width="800" controls="autoplay" height="600" src="http://<%=  @video.youtube %>" frameborder="0" allowfullscreen>
+               </iframe>
+              <hr>
+               <h6><%= @video.content %> </h6>
+
+      </div>
+      <hr>
+</div>

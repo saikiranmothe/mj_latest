@@ -1,0 +1,39 @@
+<h1>Listing kuldevi_mata</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address1</th>
+    <th>Street</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Country</th>
+    <th>How to reach</th>
+    <th>Contact details</th>
+    <th>Website</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @kuldevi_mata.each do |kuldevi_matum| %>
+  <tr>
+    <td><%= kuldevi_matum.name %></td>
+    <td><%= kuldevi_matum.address1 %></td>
+    <td><%= kuldevi_matum.street %></td>
+    <td><%= kuldevi_matum.city %></td>
+    <td><%= kuldevi_matum.state %></td>
+    <td><%= kuldevi_matum.country %></td>
+    <td><%= kuldevi_matum.how_to_reach %></td>
+    <td><%= kuldevi_matum.contact_details %></td>
+    <td><%= kuldevi_matum.website %></td>
+    <td><%= link_to 'Show', kuldevi_matum %></td>
+    <td><%= link_to 'Edit', edit_kuldevi_matum_path(kuldevi_matum) %></td>
+    <td><%= link_to 'Destroy', kuldevi_matum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Kuldevi matum', new_kuldevi_matum_path %>
